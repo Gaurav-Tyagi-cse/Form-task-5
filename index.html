@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <style>
+        select{
+            width: 80px;
+        }
+        .zip{
+            width: 50px;
+        }
+        .first{
+            border: 0px;
+        }
+        .second{
+            padding-top: 20px;
+            border: 0px;
+        }
+        fieldset{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table border="1px">
+        <tr align="center">
+            <td class="first">
+                <h3><b>Please fill out the form completely.</b></h3>
+            </td>
+        </tr>
+        <tr>
+            <td class="first">
+                <fieldset>
+                    <legend> Personal Information</legend>
+                    <form>
+                        
+                            First Name:
+                            <input type="text" required>
+                            <br><br>
+                            Last Name:
+                            <input type="text" size="40px">
+                            <br><br>
+                            Street:
+                            <input type="text" size="40px">
+                            <br><br>
+                            City:
+                            <input type="text" size="40px">
+                            <br><br>
+                            State:
+                            <select name="state">
+                                <option disabled selected>----</option>
+                                <option value="UP">UP</option>
+                                <option value="UK">UK</option>
+                                <option value="HR">HR</option>
+                                <option value="DL">DL</option>
+                            </select>
+                            &nbsp;&nbsp;&nbsp;
+                            Zip:
+                            <input class="zip" type="number">
+                        
+                    </form>
+                   </fieldset>
+            </td>
+        </tr>
+        <tr >
+            <td  class="second"><fieldset>
+                <legend >Other Form Elements</legend>
+                <form action="#">
+                    Do you have a pet dog?
+                    &nbsp;&nbsp;
+                    <input type="radio" name="r">Yes
+                    <input type="radio" name="r">No
+                    <br><br>
+                    If yes,how many?
+                    &nbsp;&nbsp;
+                    <input type="radio" name="f">One
+                    <input type="radio" name="r">Two
+                    <input type="radio" name="r">More than Two
+                    <br><br>
+                    What breed of dog have you had as a pet?{check all that apply}
+                    <br>
+                    <input type="checkbox" name="c">Bulldog
+                    <input type="checkbox" name="c">Basset Hound
+                    <input type="checkbox" name="c">Golden Retriever
+                    <br><br>
+                    tells us about your favorite dog:
+                    <br>
+                    <textarea name="textarea" cols="50" rows="10"></textarea>
+
+                </form>
+
+
+            </fieldset></td>
+            <tr height="60px" class="first">
+                <td align="center" >
+                    <button type="button">Send Info</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button">Clear Info</button>
+                </td>
+            </tr>
+            
+        </tr>
+
+    </table>
+</body>
+</html>
